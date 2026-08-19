@@ -70,9 +70,9 @@
 .history-item .hd{cursor:pointer;}
 .history-item .arrow{font-size:12px;color:var(--ink-soft);transition:transform .2s;flex-shrink:0;margin-left:8px;}
 .history-item.open .arrow{transform:rotate(180deg);}
-.history-item .body{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;}
+.history-item .body{max-height:0 !important;overflow:hidden !important;transition:max-height .3s ease,padding .3s ease;}
 .history-item.open .body{max-height:500px;padding-top:8px;}
-.history-item .sum{margin-top:6px;color:var(--ink);font-size:13px;line-height:1.65}
+.history-item.open .sum{margin-top:6px;color:var(--ink);font-size:13px;line-height:1.65}
  @media (max-width:720px){.controls,.stats,.grid,header,footer{padding-left:14px;padding-right:14px;} .grid{grid-template-columns:1fr;} input[type=search]{min-width:100%;margin-left:0!important;} header h1{font-size:20px;}}
 </style>
 </head>
