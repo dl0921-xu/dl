@@ -1,6 +1,6 @@
 # 尼日利亚（Nigeria）公司治理法规看板
 
-> **最后更新**：2026-08-18  
+> **最后更新**：2026-08-20  
 > **覆盖期间**：2024–2026  
 > **核心法律**：Companies and Allied Matters Act (CAMA) 2020  
 > **主要监管机构**：CAC / FIRS / NIPC / CBN  

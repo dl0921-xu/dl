@@ -1,6 +1,6 @@
 # 🇪🇹 埃塞俄比亚（Ethiopia）公司治理法规看板
 
-> **最后更新**：2026-08-18  
+> **最后更新**：2026-08-20  
 > **覆盖期间**：2024–2026  
 > **核心法律框架**：Commercial Code Proclamation No. 1243/2021（2021年修订版）  
 > **投资主管机关**：Ethiopian Investment Commission (EIC)  
