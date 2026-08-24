@@ -156,10 +156,9 @@
 
 <script>
 const LAST_UPDATE = "2026-08-24";
-/* DAILY_UPDATE_2026-08-24_V2 */
 /* DAILY_UPDATE_2026-08-24_V1 */
 const HISTORY = [
- {date:"2026-08-24", title:"每日更新：新增6条政策条目，覆盖非洲、东南亚、离岸金融中心", summary:"本次更新新增条目覆盖：尼日利亚CAC强制商业文件披露执法（2026年8月）、肯尼亚年度申报与受益所有权执法清理（2026年）、肯尼亚国企CEO任期限制法案（2026年8月）、埃塞俄比亚受益所有权信息透明度条例592/2026、BVI董事任命备案时限压缩至15天、越南公司治理准则2026正式实施。", meta:"影响：条目总数从93条增至99条", archive:"archive-2026-08-24.html"},
+ {date:"2026-08-24", title:"每日更新：新增3条政策条目，覆盖非洲3国", summary:"本次更新新增条目覆盖：尼日利亚CAC强制商业文件披露执法（2026年8月）、肯尼亚年度申报与受益所有权执法清理（2026年）、埃塞俄比亚受益所有权信息透明度条例592/2026。新加坡与孟加拉国治理规则仍处草案/审议阶段，作为观察项保留。", meta:"影响：条目总数从93条增至96条", archive:null},
  {date:"2026-08-23", title:"每日更新：新增6条政策条目，覆盖4大地区", summary:"本次更新新增条目覆盖：卡塔尔QFMA新治理准则过渡期截止（2026年8月）、巴西上市公司强制ESG披露（2026年起）、香港HKEX上市框架竞争力审查咨询（2026年3月）、俄罗斯第51-FZ号法律战略企业监管范围扩大、俄罗斯\"套娃\"多层控股结构解禁、印尼KBLI 2026行业分类更新与合规控制点强化。", meta:"影响：条目总数从87条增至93条", archive:"archive-2026-08-23.html"},
  {date:"2026-08-22", title:"每日更新（v2）：新增8条政策条目，覆盖6大地区", summary:"本次更新新增条目覆盖：哥伦比亚SAGRILAFT/PTEE合规体系合并（2026年7月）、墨西哥ESG强制披露与数字资产AML新规、越南第296/2026号议定书（企业登记与受益所有人强化）、泰国SET新上市披露要求（2026年7月）、开曼群岛新反洗钱与金融制裁合规规则（2026年9月18日生效）、中国新公司法注册资本5年实缴期限、俄罗斯第550号总统令放宽外国个人银行存款限制。", meta:"影响：条目总数从79条增至87条", archive:"archive-2026-08-22-v2.html"},
  {date:"2026-08-21", title:"每日更新：新增5条政策条目，覆盖4大地区", summary:"本次更新新增条目覆盖：开曼群岛CIMA反洗钱有效合规计划新规则（2026年7月）、巴西Law 15.358/2026企业高管监督责任扩大、阿联酋央行CBUAE强制三道防线模型、俄罗斯319-FZ号法律细化（不友好国家投资者回购期权法院终止机制，2026年8月4日签署）、泰国企业高管AI治理准则发布。", meta:"影响：条目总数从74条增至79条", archive:"archive-2026-08-21.html"},
@@ -264,9 +263,6 @@ const DATA = [
  { region:"非洲", country:"尼日利亚", regulator:"公司事务委员会（CAC）", title:"CAC强制商业文件披露执法（2026年8月）", summary:"CAC自2026年8月1日起强化CAMA 2020下的商业文件披露执法。公司商业信函、发票、合同、收据及其他正式文件须清晰展示公司注册名称、RC编号、注册办公地址及董事信息；违规可能面临行政处罚。", category:"信息披露", status:"已生效", published:"2026-08-01", effective:"2026-08-01", source:"尼日利亚公司事务委员会（CAC）", url:"https://www.cac.gov.ng/" },
  { region:"非洲", country:"肯尼亚", regulator:"商业登记服务局（BRS）", title:"年度申报与受益所有权执法清理（2026年）", summary:"BRS在2026年持续对未提交年度申报表、未更新受益所有权信息及长期不活跃公司开展强制注销清理。公司须通过eCitizen保持CR29与BO记录一致，否则面临被struck off的风险。", category:"年审", status:"已生效", published:"2026-01", effective:"2026", source:"肯尼亚商业登记服务局（BRS）", url:"https://brs.go.ke/" },
  { region:"非洲", country:"埃塞俄比亚", regulator:"贸易与区域一体化部（MoTRI）", title:"受益所有权信息透明度条例 592/2026", summary:"埃塞俄比亚发布受益所有权信息透明度条例592/2026，要求法人识别并申报最终控制或指导业务的自然人；股份公司通常以10%为门槛，高风险行业降至5%。该条例强化AML/CFT透明度义务。", category:"受益所有权", status:"已生效", published:"2026", effective:"2026", source:"埃塞俄比亚司法部/联邦公报", url:"https://www.justice.gov.et/" },
- { region:"非洲", country:"肯尼亚", regulator:"肯尼亚政府", title:"《国有企业（修正）法案》：CEO任期限制（2026年8月）", summary:"2026年8月发布的修正法案将国有企业CEO任期统一限制为3年，最多连任一次（总计不超过6年），旨在规范治理并减少任意延期带来的法律纠纷。", category:"董事会治理", status:"已生效", published:"2026-08", effective:"2026-08", source:"肯尼亚政府", url:"https://www.go.ke/" },
- { region:"离岸金融中心", country:"BVI", regulator:"ROCA/FSC", title:"董事任命备案时限大幅压缩至15天", summary:"BVI将董事任命的法定备案时限从此前的6个月大幅压缩至公司成立后15天内；成员登记册须在BVI境内注册办事处保存或向注册代理人及时更新存放地址。", category:"公司治理", status:"已生效", published:"2026", effective:"2026", source:"BVI金融服务委员会（FSC）", url:"https://www.bvifsc.vg/" },
- { region:"东南亚", country:"越南", regulator:"国家证券委员会", title:"《越南公司治理准则2026》(VNCG Code)正式实施", summary:"采用comply-or-explain模式，要求董事会至少1/3为独立董事、董事长与CEO角色分离、设立审计委员会；不遵循最佳实践须公开说明理由。对标G20/OECD公司治理原则。", category:"董事会治理", status:"已生效", published:"2026", effective:"2026", source:"越南国家证券委员会（SSC）", url:"https://ssc.gov.vn/" },
 ];
 const REGION_COLORS = {"非洲":"var(--africa)","东南亚":"var(--sea)","拉美":"var(--latam)","中东南亚":"var(--mesa)","中国":"var(--china)","离岸金融中心":"var(--offshore)","俄罗斯":"var(--russia)"};
 const STATUS_CLASS = {"已生效":"st-active","已发布待实施":"st-soon","草案征求意见":"st-draft","立法/审议中":"st-legis"};
