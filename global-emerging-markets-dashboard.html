@@ -155,10 +155,11 @@
 </footer>
 
 <script>
-const LAST_UPDATE = "2026-09-17";
+const LAST_UPDATE = "2026-09-24";
 /* DAILY_UPDATE_2026-08-24_V2 */
 /* DAILY_UPDATE_2026-08-24_V1 */
 const HISTORY = [
+ {date:"2026-09-24", title:"每日更新：新增10条政策条目，覆盖非洲、拉美、中东、离岸金融中心、俄罗斯", summary:"新增条目：巴西关键战略矿产政策法（第15,506号）与QDMTT规范指令（NI 2,342/2026）、墨西哥LMV修正要约收购阈值重校准、阿联酋商业公司法全面修订施行（第20/2025号）、开曼公司法修正（无需法院批准资本削减）与CIMA金融制裁新规则（9月）、BVI受益所有权合法利益访问框架、俄罗斯EZO间接持股计算方法新规与增值税上调至22%、埃塞俄比亚ECMA集体投资计划指令（第1150/2026号）。", meta:"影响：条目总数从184条增至194条", archive:null},
  {date:"2026-09-10", title:"每日更新：新增8条政策条目，覆盖非洲、东南亚、中东、拉美、离岸金融中心、俄罗斯", summary:"新增条目：尼日利亚FRC取消多重财务报表申报并启用国家审计存储库、肯尼亚Finance Act 2026出口申报保留要求（9月1日起）、印尼OJK独立监事冷却期（2年）、阿联酋DIFC指定公司条例2026、埃塞俄比亚NBE外汇自由化（服务出口商100%留存+利润汇出银行自主审批）、巴西CVM第245号决议高风险司法管辖区增强型尽职调查、俄罗斯数字货币监管框架（第282-FZ号，9月1日起）、肯尼亚税务特赦计划（利息罚款100%豁免至2026年底）。", meta:"影响：条目总数从167条增至175条", archive:null},
  {date:"2026-09-17", title:"每日更新：新增9条政策条目，覆盖非洲、东南亚、中东、拉美", summary:"新增条目：尼日利亚SEC CGD 2026 INED转高管禁令与冷却期、肯尼亚BRS受益所有人信息指南更新（9月）、肯尼亚外国公民90天合规宽限期、肯尼亚ODPC跨境数据传输指南（9月8日）、新加坡XBRL分类标准2026更新、沙特CMA取消QFI框架开放外资准入、巴西NR No.1职业风险管理含心理健康、墨西哥反洗钱基于风险方法修订（11月30日生效）、哥伦比亚开放金融强制实施。", meta:"影响：条目总数从175条增至184条", archive:null},
  {date:"2026-09-03", title:"每日更新：新增18条政策条目，覆盖全部7大地区", summary:"新增条目：肯尼亚CMA新治理条例、尼日利亚ESG过渡期、新加坡董事培训课程、泰国DBD线上注册、印尼企业刑事责任法、越南投资法与破产法、巴西薪酬平等报告、墨西哥海关法修订、沙特关联交易审批、阿联酋数字治理规则、中国反跨境腐败法草案、中国个人信息保护简化、中国车企海外合规指引、开曼代币化基金立法、俄罗斯投资审批门槛提高与套娃结构解禁与董事会职权变更。", meta:"影响：条目总数从149条增至167条", archive:null},
@@ -365,6 +366,16 @@ const DATA = [
 ,{ region:"拉美", country:"巴西", regulator:"劳动部", title:"NR No.1职业风险管理（GRO）强制化：含心理健康风险（2026年5月）", summary:"2026年5月生效的劳动部新规强制要求企业进行职业风险管理（GRO），首次将心理健康风险（压力、骚扰和倦怠）纳入企业法定管理范围。", category:"合规要求", status:"已生效", published:"2026-05", effective:"2026-05", source:"巴西劳动部", url:"https://www.gov.br/trabalho-e-emprego/" }
 ,{ region:"拉美", country:"墨西哥", regulator:"财政部", title:"第115/2026号协议：反洗钱通用规则修订（基于风险方法）", summary:"2026年8月发布，修订LFPIORPI通用规则，要求企业采取基于风险的方法（Risk-Based Approach），不仅限于身份识别，还须建立涵盖风险矩阵、监控和审计程序的完整合规体系。多数修订2026年11月30日生效。", category:"监管架构", status:"已发布待实施", published:"2026-08", effective:"2026-11-30", source:"墨西哥财政部", url:"https://www.gob.mx/shcp" }
 ,{ region:"拉美", country:"哥伦比亚", regulator:"联邦政府", title:"开放金融强制实施（第0368号法令，2026年4月）", summary:"2026年4月发布的第0368号法令强制要求金融机构提供标准化API接口，开启强制开放金融时代，受监管机构须在数据治理和网络安全方面进行升级。", category:"监管架构", status:"已生效", published:"2026-04", effective:"2026-04", source:"哥伦比亚联邦政府", url:"https://www.gov.co/" }
+,{ region:"拉丁美洲", country:"巴西", regulator:"联邦政府", title:"国家关键与战略矿产政策法（第15,506号法律）", summary:"2026年9月16日颁布，设立国家关键与战略矿产政策（PNMCE）及国家委员会（CIMCE），赋予政府对涉及关键矿产企业股权变更、地质信息获取及国际供应合同的审批权。", category:"外资准入", status:"已生效", published:"2026-09-16", effective:"2026-09-16", source:"巴西联邦政府", url:"https://www.gov.br/" }
+,{ region:"拉丁美洲", country:"巴西", regulator:"联邦税务局", title:"合格国内最低补足税（QDMTT）规范指令（NI 2,342/2026）", summary:"2026年9月15日发布，落实OECD GloBE规则，引入基于实质经营的税收激励安全港制度（RSGIF），确保跨国集团有效税率不低于15%。", category:"税务改革", status:"已生效", published:"2026-09-15", effective:"2026-09-15", source:"巴西联邦税务局", url:"https://www.gov.br/receitafederal/" }
+,{ region:"拉丁美洲", country:"墨西哥", regulator:"国家银行证券委员会（CNBV）", title:"证券市场法（LMV）修正：强制要约收购阈值重新校准", summary:"2026年修正案重新校准上市公司强制性要约收购阈值，并将类似保护机制扩展至部分SAPI公司；要求更详细的并购交易披露，强化少数股东保护。", category:"公司法修订", status:"已生效", published:"2026", effective:"2026", source:"墨西哥CNBV", url:"https://www.gob.mx/cnbv" }
+,{ region:"中东", country:"阿联酋", regulator:"联邦政府", title:"联邦法令第20/2025号：商业公司法全面修订施行", summary:"2026年全面施行，允许LLC和股份公司发行多种类别股份（含优先股），支持跨辖区重组；扩大董事受托责任与关联交易披露义务；从形式合规转向运营治理。", category:"公司法修订", status:"已生效", published:"2025", effective:"2026", source:"阿联酋政府", url:"https://www.uaecabinet.ae/" }
+,{ region:"离岸金融中心", country:"开曼群岛", regulator:"政府", title:"公司法修正：无需法院批准的资本削减（2026年1月1日起）", summary:"满足偿债能力要求的公司可通过董事签署偿债能力声明+股东特别决议实现资本削减，无需法院审批；同时扩展转入机制，允许无股本外国实体迁入。", category:"公司法修订", status:"已生效", published:"2026-01-01", effective:"2026-01-01", source:"开曼群岛政府", url:"https://www.gov.ky/" }
+,{ region:"离岸金融中心", country:"开曼群岛", regulator:"CIMA", title:"金融制裁合规新规则（2026年9月生效）", summary:"CIMA发布针对受监管实体的强制性金融制裁合规规则，细化治理与控制职能要求，强化制裁风险管理。", category:"监管架构", status:"已生效", published:"2026-09", effective:"2026-09", source:"开曼群岛金融管理局（CIMA）", url:"https://www.cima.ky/" }
+,{ region:"离岸金融中心", country:"BVI", regulator:"FSC", title:"受益所有权合法利益访问框架实施", summary:"实施合法利益（Legitimate Interest）访问框架，第三方须证明调查或监管目的方可申请访问受益所有权数据；执法机构可直接访问。", category:"受益所有权", status:"已生效", published:"2026", effective:"2026", source:"BVI金融服务委员会（FSC）", url:"https://www.bvifsc.vg/" }
+,{ region:"俄罗斯", country:"俄罗斯", regulator:"联邦政府", title:"经济重要组织（EZO）间接持股计算方法新规", summary:"2026年7月生效，引入针对外国信托/基金结构的特定计算方法，用于识别EZO背后的实际间接持有者，为大型战略企业股份直接转让提供法律依据。", category:"外资准入", status:"已生效", published:"2026-07", effective:"2026-07", source:"俄罗斯政府", url:"http://government.ru/" }
+,{ region:"俄罗斯", country:"俄罗斯", regulator:"联邦税务局", title:"增值税上调至22%（2026年1月1日起）", summary:"标准增值税率从20%上调至22%，增加企业合规成本与交易税负。", category:"税务改革", status:"已生效", published:"2026-01-01", effective:"2026-01-01", source:"俄罗斯联邦税务局", url:"https://www.nalog.gov.ru/" }
+,{ region:"非洲", country:"埃塞俄比亚", regulator:"资本市场管理局（ECMA）", title:"集体投资计划操作指令（第1150/2026号）", summary:"2026年9月发布，规范货币市场基金、共同基金、REITs、ETFs等；要求管理人董事会具备基金/法律/审计核心能力，强制独立托管人制度。", category:"监管架构", status:"已生效", published:"2026-09", effective:"2026-09", source:"埃塞俄比亚资本市场管理局（ECMA）", url:"https://www.ecma.gov.et/" }
 ];
 const REGION_COLORS = {"非洲":"var(--africa)","东南亚":"var(--sea)","拉美":"var(--latam)","中东南亚":"var(--mesa)","中国":"var(--china)","离岸金融中心":"var(--offshore)","俄罗斯":"var(--russia)"};
 const STATUS_CLASS = {"已生效":"st-active","已发布待实施":"st-soon","草案征求意见":"st-draft","立法/审议中":"st-legis"};
