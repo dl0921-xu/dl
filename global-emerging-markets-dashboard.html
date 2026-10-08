@@ -155,10 +155,11 @@
 </footer>
 
 <script>
-const LAST_UPDATE = "2026-10-01";
+const LAST_UPDATE = "2026-10-08";
 /* DAILY_UPDATE_2026-08-24_V2 */
 /* DAILY_UPDATE_2026-08-24_V1 */
 const HISTORY = [
+ {date:"2026-10-08", title:"每日更新：新增6条政策条目，覆盖非洲、东南亚、拉美、俄罗斯", summary:"新增条目：尼日利亚SEC IFRS可持续披露实施计划提交截止日（10月15日）、肯尼亚《认证治理秘书法案》2026年、肯尼亚《国家公司（修订）法案》2026年（国企CEO任期限制）、巴西CVM公众治理报告框架咨询（ASA/CVM No. 01/26）、俄罗斯央行加密资产市场准入新规（10月）、新加坡ACRA执法权强化与董事资格取消扩展（5月）。", meta:"影响：条目总数从206条增至212条", archive:null},
  {date:"2026-10-01", title:"每日更新：新增12条政策条目，覆盖非洲、东南亚、拉美、中东、中国、离岸金融中心、俄罗斯", summary:"新增条目：尼日利亚SEC 2026治理指令（董事任期限制+INED转型禁令）、肯尼亚CMA ESG准则草案、肯尼亚国企CEO任期限制法案、越南公司治理准则2026（独立董事1/3要求）、巴西董事会性别配额法、墨西哥强制可持续发展报告、沙特UBO披露强化与统一商业登记、沙特CMA董事罢免程序修订、中国新公司法过渡期（审计委员会+5年资本实缴）、开曼CIMA反洗钱强制规则、百慕大利益实体法、俄罗斯EZO监管延续。", meta:"影响：条目总数从194条增至206条", archive:null},
  {date:"2026-09-24", title:"每日更新：新增10条政策条目，覆盖非洲、拉美、中东、离岸金融中心、俄罗斯", summary:"新增条目：巴西关键战略矿产政策法（第15,506号）与QDMTT规范指令（NI 2,342/2026）、墨西哥LMV修正要约收购阈值重校准、阿联酋商业公司法全面修订施行（第20/2025号）、开曼公司法修正（无需法院批准资本削减）与CIMA金融制裁新规则（9月）、BVI受益所有权合法利益访问框架、俄罗斯EZO间接持股计算方法新规与增值税上调至22%、埃塞俄比亚ECMA集体投资计划指令（第1150/2026号）。", meta:"影响：条目总数从184条增至194条", archive:null},
  {date:"2026-09-10", title:"每日更新：新增8条政策条目，覆盖非洲、东南亚、中东、拉美、离岸金融中心、俄罗斯", summary:"新增条目：尼日利亚FRC取消多重财务报表申报并启用国家审计存储库、肯尼亚Finance Act 2026出口申报保留要求（9月1日起）、印尼OJK独立监事冷却期（2年）、阿联酋DIFC指定公司条例2026、埃塞俄比亚NBE外汇自由化（服务出口商100%留存+利润汇出银行自主审批）、巴西CVM第245号决议高风险司法管辖区增强型尽职调查、俄罗斯数字货币监管框架（第282-FZ号，9月1日起）、肯尼亚税务特赦计划（利息罚款100%豁免至2026年底）。", meta:"影响：条目总数从167条增至175条", archive:null},
@@ -389,6 +390,12 @@ const DATA = [
 ,{ region:"离岸金融中心", country:"开曼群岛", regulator:"CIMA", title:"CIMA反洗钱与制裁合规强制规则（2026年9月生效）", summary:"将以往指导意见转化为强制性规则：含强制年度合规培训、内部审计要求及提升AMLCO独立性。", category:"监管架构", status:"已生效", published:"2026-09", effective:"2026-09", source:"开曼CIMA", url:"https://www.cima.ky/" }
 ,{ region:"离岸金融中心", country:"百慕大", regulator:"政府", title:"《利益实体法2025》生效：目的驱动型公司治理", summary:"允许百慕大实体选择成为具有明确公共利益目的的「利益公司」，填补当地目的驱动型公司治理立法空白。", category:"公司法修订", status:"已生效", published:"2025", effective:"2025", source:"百慕大政府", url:"https://www.gov.bm/" }
 ,{ region:"俄罗斯", country:"俄罗斯", regulator:"联邦政府", title:"经济重要组织（EZO）特殊监管机制延续至2026年底", summary:"允许在特定情况下暂停外国持股方的公司权利（表决权、股息等）；穿透式识别间接所有者，防止通过离岸架构规避监管。", category:"外资准入", status:"已生效", published:"2026", effective:"2026", source:"俄罗斯政府", url:"http://government.ru/" }
+,{ region:"非洲", country:"尼日利亚", regulator:"证券交易委员会（SEC）", title:"IFRS可持续披露准则实施计划提交截止（10月15日）", summary:"SEC要求所有上市公司和重大利益资本市场运营商在2026年10月15日前提交IFRS Sustainability Disclosure Standards（ISSB S1/S2）实施计划；全面强制ESG披露将于2028年1月起实施，目前处于过渡期。", category:"ESG/可持续", status:"已发布待实施", published:"2026-10-15", effective:"2026-10-15", source:"尼日利亚证券交易委员会（SEC）", url:"https://sec.gov.ng/" }
+,{ region:"非洲", country:"肯尼亚", regulator:"议会", title:"《认证治理秘书法案》2026年", summary:"拟建立认证治理秘书协会，对公司治理秘书引入更严格的资格认证、注册和执业标准，赋予协会制定治理审计规范的权力，提升公司治理职业化水平。", category:"董事会治理", status:"立法/审议中", published:"2026", effective:"—", source:"肯尼亚议会", url:"https://www.parliament.go.ke/" }
+,{ region:"非洲", country:"肯尼亚", regulator:"议会", title:"《国家公司（修订）法案》2026年：国企CEO任期限制", summary:"拟为国有企业CEO设定统一三年任期制，仅可续任一次（最高6年），旨在减少领导层更替争议，增强国有企业治理稳定性。", category:"董事会治理", status:"立法/审议中", published:"2026", effective:"—", source:"肯尼亚议会", url:"https://www.parliament.go.ke/" }
+,{ region:"拉丁美洲", country:"巴西", regulator:"证券交易委员会（CVM）", title:"公众治理报告框架咨询（ASA/CVM No. 01/26）", summary:"CVM于2026年10月启动公众咨询，评估现有上市公司披露制度的实际效果，咨询持续至2027年2月；同步推进ISSB标准下comply-or-explain披露模式。", category:"合规要求", status:"草案征求意见", published:"2026-10", effective:"—", source:"巴西证券交易委员会（CVM）", url:"https://conteudo.cvm.gov.br/" }
+,{ region:"俄罗斯", country:"俄罗斯", regulator:"俄罗斯央行", title:"加密资产市场准入新规（托管/交易平台强制登记）", summary:"2026年10月起实施，要求加密货币托管商、数字资产交易平台和数字权利信息系统运营商进入央行官方登记册并满足特定资质要求，将加密资产纳入正式金融合规框架。", category:"监管架构", status:"已生效", published:"2026-10", effective:"2026-10", source:"俄罗斯央行", url:"https://www.cbr.ru/" }
+,{ region:"东南亚", country:"新加坡", regulator:"ACRA", title:"《2025年公司及会计法（修订）》生效：ACRA执法权强化", summary:"2026年5月生效第一批变更：加重董事违规罚款、扩大因洗钱犯罪导致的董事资格取消范围、加强审计报告责任，强化ACRA执法权。", category:"董事会治理", status:"已生效", published:"2026-05", effective:"2026-05", source:"新加坡ACRA", url:"https://www.acra.gov.sg/" }
 ];
 const REGION_COLORS = {"非洲":"var(--africa)","东南亚":"var(--sea)","拉美":"var(--latam)","中东南亚":"var(--mesa)","中国":"var(--china)","离岸金融中心":"var(--offshore)","俄罗斯":"var(--russia)"};
 const STATUS_CLASS = {"已生效":"st-active","已发布待实施":"st-soon","草案征求意见":"st-draft","立法/审议中":"st-legis"};
