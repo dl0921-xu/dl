@@ -155,10 +155,11 @@
 </footer>
 
 <script>
-const LAST_UPDATE = "2026-10-15";
+const LAST_UPDATE = "2026-10-22";
 /* DAILY_UPDATE_2026-08-24_V2 */
 /* DAILY_UPDATE_2026-08-24_V1 */
 const HISTORY = [
+ {date:"2026-10-22", title:"每日更新：新增12条政策条目，覆盖东南亚、非洲、中东、中国、离岸金融中心", summary:"新增条目：新加坡ACRA第三阶段修订生效（10月20日，年度申报+CEO识别+简化除名）、肯尼亚TP规则2026更新、尼日利亚TIN与RC号码整合、越南第296/2026号法令（三层级BO框架）、印尼公司刑事责任扩大、泰国DBD打击名义代持强化审查（8月）、沙特UBO披露与董事罢免修订（4月）、阿联酋商业公司法重大修订施行、中国注册资本登记管理征求意见稿、开曼简化资本削减、BVI实施CRS 2.0/CARF、孟加拉国治理规则草案。", meta:"影响：条目总数从219条增至231条", archive:"archive-2026-10-22.html"},
  {date:"2026-10-15", title:"每日更新：新增7条政策条目，覆盖非洲、东南亚、中国、拉美、中东", summary:"新增条目：肯尼亚PBO条例2026（利益冲突控制+透明财务）、越南第288/2026号议定书（BO违规处罚加重）、印尼OJK独立监事2年冷却期、泰国DBD泰方股东银行流水核查（打击名义代持）、中国《上市公司治理准则》2026修订版（clawback+审计委员会替代监事会）、墨西哥上市公司强制可持续发展报告、阿联酋公众公司女性董事最低配额。", meta:"影响：条目总数从212条增至219条", archive:null},
  {date:"2026-10-08", title:"每日更新：新增6条政策条目，覆盖非洲、东南亚、拉美、俄罗斯", summary:"新增条目：尼日利亚SEC IFRS可持续披露实施计划提交截止日（10月15日）、肯尼亚《认证治理秘书法案》2026年、肯尼亚《国家公司（修订）法案》2026年（国企CEO任期限制）、巴西CVM公众治理报告框架咨询（ASA/CVM No. 01/26）、俄罗斯央行加密资产市场准入新规（10月）、新加坡ACRA执法权强化与董事资格取消扩展（5月）。", meta:"影响：条目总数从206条增至212条", archive:null},
  {date:"2026-10-01", title:"每日更新：新增12条政策条目，覆盖非洲、东南亚、拉美、中东、中国、离岸金融中心、俄罗斯", summary:"新增条目：尼日利亚SEC 2026治理指令（董事任期限制+INED转型禁令）、肯尼亚CMA ESG准则草案、肯尼亚国企CEO任期限制法案、越南公司治理准则2026（独立董事1/3要求）、巴西董事会性别配额法、墨西哥强制可持续发展报告、沙特UBO披露强化与统一商业登记、沙特CMA董事罢免程序修订、中国新公司法过渡期（审计委员会+5年资本实缴）、开曼CIMA反洗钱强制规则、百慕大利益实体法、俄罗斯EZO监管延续。", meta:"影响：条目总数从194条增至206条", archive:null},
@@ -404,6 +405,18 @@ const DATA = [
 ,{ region:"中国", country:"中国", regulator:"中国证监会", title:"《上市公司治理准则》2026年修订版（2026年1月1日起施行）", summary:"强化高管薪酬与业绩挂钩机制，鼓励延期支付与追索扣回（clawback）；允许公司选择审计委员会替代监事会；细化董事任职资格审查和离职审查义务；严格限制同业竞争和完善关联交易审议程序。", category:"董事会治理", status:"已生效", published:"2025-10", effective:"2026-01-01", source:"中国证监会", url:"http://www.csrc.gov.cn/" }
 ,{ region:"拉丁美洲", country:"墨西哥", regulator:"国家银行和证券委员会（CNBV）", title:"上市公司强制可持续发展报告（2026年起）", summary:"2026年起所有上市公司须提交可持续发展报告，旨在为董事会提供ESG风险监督工具，履行受托责任。", category:"ESG/可持续", status:"已生效", published:"2026", effective:"2026", source:"墨西哥CNBV", url:"https://www.gob.mx/cnbv" }
 ,{ region:"中东", country:"阿联酋", regulator:"证券市场管理局（SCA）", title:"公众股份公司强制女性董事配额", summary:"要求所有公众股份公司（PJSC）董事会至少包含1名女性董事，并建立举报和反腐败框架，作为ESG治理的组成部分。", category:"董事会治理", status:"已生效", published:"2026", effective:"2026", source:"阿联酋SCA", url:"https://www.sca.gov.ae/" }
+,{ region:"东南亚", country:"新加坡", regulator:"会计与企业管理局（ACRA）", title:"《公司与会计法（修订）案》第三阶段生效（10月20日）", summary:"2026年10月20日起生效：年度申报须确认董事/CEO/秘书信息准确性，新增CEO身份识别问题；简化股份有限公司法定会议和法定报告要求；缩短除名与恢复程序公告时间线。", category:"合规要求", status:"已生效", published:"2026-10-20", effective:"2026-10-20", source:"新加坡ACRA", url:"https://www.acra.gov.sg/" }
+,{ region:"非洲", country:"肯尼亚", regulator:"肯尼亚税务局（KRA）", title:"《2026年所得税（转让定价）规则》取代2006年旧规", summary:"2026年10月生效，全面更新转让定价规则：要求跨国企业对关联方交易保留更详细的证明文件，限制利润转移，强化独立交易原则执行。", category:"税务改革", status:"已生效", published:"2026-10", effective:"2026-10", source:"肯尼亚税务局（KRA）", url:"https://www.kra.go.ke/" }
+,{ region:"非洲", country:"尼日利亚", regulator:"联邦税务局（FIRS）", title:"TIN与RC号码整合：注册号即税号", summary:"2026年起，CAC公司注册号（RC Number）自动作为税务识别号（TIN），无需单独进行税务登记，简化注册后税务管理流程。", category:"合规要求", status:"已生效", published:"2026", effective:"2026", source:"尼日利亚联邦税务局（FIRS）", url:"https://www.firs.gov.ng/" }
+,{ region:"东南亚", country:"越南", regulator:"政府", title:"第296/2026/ND-CP号法令：三层级受益所有人识别框架", summary:"引入严格的三层级受益所有人识别框架，要求企业进行强制性穿透式分析以追踪至最终自然人；加强\"合规或解释\"机制执行，未达标须提供详细补救计划。", category:"受益所有权", status:"已生效", published:"2026", effective:"2026", source:"越南政府", url:"https://www.mpi.gov.vn/" }
+,{ region:"东南亚", country:"印度尼西亚", regulator:"政府", title:"《2026年第1号法》：扩大公司刑事责任范围", summary:"显著扩大公司刑事责任范围，提高董事、监事及合规官在公司记录不实时的法律风险；配合Permenkum No. 49/2025改革SABH在线系统公司登记与年报备案程序。", category:"公司法修订", status:"已生效", published:"2026", effective:"2026", source:"印度尼西亚政府", url:"https://www.kemenkumham.go.id/" }
+,{ region:"东南亚", country:"泰国", regulator:"商业发展厅（DBD）", title:"DBD Order No. 2/2569：打击名义代持强化审查（8月1日起）", summary:"自2026年8月1日起，对涉及外资的有限责任公司实施更严格文件审查：泰方股东须证明资本所有权真实性，提交银行流水追溯资金来源，从形式审查转向实质审查。", category:"外资准入", status:"已生效", published:"2026-08-01", effective:"2026-08-01", source:"泰国商业发展厅（DBD）", url:"https://www.dbd.go.th/" }
+,{ region:"中东", country:"沙特阿拉伯", regulator:"资本市场管理局（CMA）", title:"公司法实施条例2026年4月修订：UBO披露与董事罢免", summary:"2026年4月修订引入强制最终受益人披露、建立统一国家商业登记系统；持有10%以上表决权股东可启动罢免董事程序；强化关联交易独立审查要求。", category:"受益所有权", status:"已生效", published:"2026-04", effective:"2026-04", source:"沙特CMA", url:"https://www.cma.org.sa/" }
+,{ region:"中东", country:"阿联酋", regulator:"联邦政府", title:"《商业公司法》重大修订全面施行（第20/2025号法令）", summary:"2026年1月1日起全面生效：加强小股东保护、明确董事尽职守则、对关联方交易设定更严格披露阈值；管辖权延伸至在阿联酋运营的外国实体及自由区岸上业务公司。", category:"公司法修订", status:"已生效", published:"2025", effective:"2026-01-01", source:"阿联酋联邦政府", url:"https://www.moj.gov.ae/" }
+,{ region:"中国", country:"中国", regulator:"国家市场监督管理总局（SAMR）", title:"注册资本登记管理制度规定（征求意见稿）", summary:"2026年10月发布征求意见稿，旨在标准化注册资本披露与透明度；存量公司须在2027年6月30日前将剩余出资期限调整至5年内。", category:"公司法修订", status:"草案征求意见", published:"2026-10", effective:"—", source:"国家市场监督管理总局", url:"https://www.samr.gov.cn/" }
+,{ region:"离岸金融中心", country:"开曼群岛", regulator:"公司注册处/CIMA", title:"公司法2026年1月修订：简化资本削减程序", summary:"2026年1月生效，引入简化资本减少程序：满足偿付能力声明前提下，通过特别决议即可减少股份资本，无需法院批准；同步收紧受益所有权登记要求。", category:"公司法修订", status:"已生效", published:"2026-01", effective:"2026-01", source:"开曼群岛公司注册处", url:"https://www.registry.gov.ky/" }
+,{ region:"离岸金融中心", country:"BVI", regulator:"金融服务委员会（FSC）", title:"实施OECD CRS 2.0及加密资产报告框架（CARF）", summary:"BVI全面实施CRS 2.0框架和加密资产报告框架（CARF）；合法利益访问登记制度全面运作；FSC加强行政处罚力度，要求企业确保客户尽职调查持续有效。", category:"合规要求", status:"已生效", published:"2026", effective:"2026", source:"BVI金融服务委员会（FSC）", url:"https://www.bvifsc.vg/" }
+,{ region:"东南亚", country:"孟加拉国", regulator:"孟加拉国证券交易委员会（BSEC）", title:"《2026年公司治理规则》草案", summary:"BSEC起草新治理规则：强制独立董事占董事会至少1/3；将ESG披露纳入强制要求并与IFRS S1/S2挂钩；市场呼吁分阶段实施，目前仍适用现行规则。", category:"董事会治理", status:"草案征求意见", published:"2026", effective:"—", source:"孟加拉国证券交易委员会（BSEC）", url:"https://www.bsec.org.bd/" }
 ];
 const REGION_COLORS = {"非洲":"var(--africa)","东南亚":"var(--sea)","拉美":"var(--latam)","中东南亚":"var(--mesa)","中国":"var(--china)","离岸金融中心":"var(--offshore)","俄罗斯":"var(--russia)"};
 const STATUS_CLASS = {"已生效":"st-active","已发布待实施":"st-soon","草案征求意见":"st-draft","立法/审议中":"st-legis"};
