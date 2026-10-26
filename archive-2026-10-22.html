@@ -424,7 +424,10 @@ let state = { region:"全部", cat:"全部", status:"全部", q:"", sort:"dateDe
 function fmtDate(d){ return !d || d==="—" ? "—" : d; }
 function buildCats(){ const cats = Array.from(new Set(DATA.map(d=>d.category))); const sel = document.getElementById("catSel"); cats.forEach(c=>{ const o=document.createElement("option"); o.value=c; o.textContent=c; sel.appendChild(o); }); }
 function renderStats(){ const total = DATA.length; const active = DATA.filter(d=>d.status==="已生效").length; const soon = DATA.filter(d=>d.status==="已发布待实施").length; const draft = DATA.filter(d=>d.status==="草案征求意见"||d.status==="立法/审议中").length; document.getElementById("stats").innerHTML = `<div class="stat"><div class="n">${total}</div><div class="t">政策条目总数</div></div><div class="stat green"><div class="n">${active}</div><div class="t">已生效</div></div><div class="stat gold"><div class="n">${soon}</div><div class="t">已发布待实施</div></div><div class="stat gray"><div class="n">${draft}</div><div class="t">草案 / 审议中</div></div>`; document.getElementById("m-total").textContent = total; document.getElementById("m-date").textContent = LAST_UPDATE; }
-function renderHistory(){ const box=document.getElementById("historyList"); box.innerHTML = HISTORY.map(h=>{
+function renderHistory(){ const box=document.getElementById("historyList"); let items = HISTORY;
+  if(state.q){ const q=state.q.toLowerCase(); items = HISTORY.filter(h=>{ const hay=(h.date+h.title+h.summary+h.meta).toLowerCase(); return hay.includes(q); }); }
+  if(items.length===0){ box.innerHTML='<div class="empty">历史档案中未找到匹配记录，请调整搜索关键词。</div>'; return; }
+  box.innerHTML = items.map(h=>{
   const hasArchive = h.archive ? true : false;
   const link = hasArchive ? `<a href="${h.archive}" target="_blank" class="archive-link">查看当天看板快照 →</a>` : '';
   return `<div class="history-item ${hasArchive?'has-archive':''}">
@@ -452,6 +455,7 @@ document.querySelectorAll("[data-tab]").forEach(el=>el.addEventListener("click",
  hp.classList.toggle("active", tab==="history");
  if(tab==="history") renderHistory();
 }));
+document.getElementById("searchBox").addEventListener("input",e=>{ state.q=e.target.value.trim(); render(); if(document.getElementById("historyPanel").classList.contains("active")) renderHistory(); });
 buildCats(); renderStats(); render(); renderHistory();
 </script>
 </body>
