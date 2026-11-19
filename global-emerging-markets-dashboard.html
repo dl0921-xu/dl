@@ -155,10 +155,11 @@
 </footer>
 
 <script>
-const LAST_UPDATE = "2026-11-12";
+const LAST_UPDATE = "2026-11-19";
 /* DAILY_UPDATE_2026-08-24_V2 */
 /* DAILY_UPDATE_2026-08-24_V1 */
 const HISTORY = [
+ {date:"2026-11-19", title:"每日更新：新增8条政策条目，覆盖非洲、东南亚、中东、中国香港、离岸金融中心", summary:"新增条目：肯尼亚BRS大规模注销1851家公司（11月）、肯尼亚ESG强制报告制度（2027年1月起IFRS S1/S2）、尼日利亚CBN BOFIA修正案（金融科技系统重要性监管）、越南公司治理准则2026（遵守或解释+UBO+ESG）、印尼GR 38/2026国企治理集中化（BPI Danantara）、沙特CMA股东权利强化咨询（5%门槛）、香港无纸化证券市场规则正式生效（11月16日）、离岸三中心（开曼/BVI/百慕大）经济实质与UBO执法全面收紧。", meta:"影响：条目总数从279条增至287条", archive:null},
  {date:"2026-11-12", title:"每日更新：新增6条政策条目，覆盖东南亚、拉美、非洲、中国香港", summary:"新增条目：新加坡CGAC/SGX RegCo公司治理准则重大修订公众咨询（董事兼职上限5个+委员会独立性）、新加坡MAS金融机构治理条例咨询（系统重要性银行董事会规模+关键岗位审批）、泰国SEC强制IFRS S1/S2可持续披露（SET50先行）、哥伦比亚合规官专业化要求（90小时培训+最多服务10个实体）、肯尼亚KRA最低补足税申报通知（须披露集团所有权结构）、香港HKEX发行人接入平台IAP（Q4推出）。", meta:"影响：条目总数从273条增至279条", archive:null},
  {date:"2026-11-05", title:"每日更新：新增8条政策条目，覆盖中东、俄罗斯、中国香港、东南亚、拉美", summary:"新增条目：沙特CMA提议强化股东权利（5%股东可要求现场股东大会+亏损公司复苏计划披露）、沙特全面修订上市公司实施公司法条例（7月）、阿联酋联邦第20号令全面实施（多重股权+退出权利）、俄罗斯实益拥有人披露门槛降至10%+FNS核查权扩大、俄罗斯第416-FZ号（外资税务注册简化）、香港无纸化证券制度USM（11月启动）、越南个人数据保护法全面实施、墨西哥上市公司强制ESG披露。", meta:"影响：条目总数从283条增至291条", archive:null},
  {date:"2026-11-05", title:"非洲地区大幅扩展：新增15个国家", summary:"非洲地区从原来的4个国家（肯尼亚、尼日利亚、埃塞俄比亚、毛里求斯）扩展至19个国家。新增：坦桑尼亚、加纳、南非、埃及、科特迪瓦、乌干达、喀麦隆、塞内加尔、刚果（金）、安哥拉、莫桑比克、卢旺达、摩洛哥、赞比亚、津巴布韦。新增条目涵盖公司注册、董事要求、年审、受益所有权、税务改革、公司治理等核心模块。非洲条目从56条增至97条。", meta:"影响：条目总数从242条增至283条；非洲覆盖国家从4个增至19个", archive:null},
@@ -488,6 +489,14 @@ const DATA = [
 ,{ region:"拉丁美洲", country:"哥伦比亚", regulator:"公司监管局", title:"合规官专业化要求（外部通函100-000020）", summary:"合规官须具备专业培训（至少90小时学习），且同时服务的受义务实体不得超过10个。过渡期至2027年5月31日，企业须更新内部合规制度。", category:"合规要求", status:"已生效", published:"2026-07", effective:"2026-07", source:"哥伦比亚公司监管局", url:"https://www.supersociedades.gov.co" }
 ,{ region:"非洲", country:"肯尼亚", regulator:"肯尼亚税务局（KRA）", title:"最低补足税（MTT）申报通知：须披露集团所有权结构", summary:"2026年11月KRA发布MTT申报指引，要求跨国集团披露公司所有权结构、提供所有肯尼亚成员实体PIN信息并提交相关申报表。具体截止日（11月17日/30日）须向KRA确认。", category:"税务改革", status:"已生效", published:"2026-11", effective:"2026-11", source:"KRA", url:"https://www.kra.go.ke" }
 ,{ region:"中国", country:"中国香港", regulator:"香港交易所（HKEX）", title:"发行人接入平台（IAP）计划2026年Q4推出", summary:"数字化合规申报平台，优化发行人与交易所之间的沟通及申报流程，替代现有部分线下流程。", category:"合规要求", status:"已发布待实施", published:"2026", effective:"2026-Q4", source:"HKEX", url:"https://www.hkex.com.hk" }
+,{ region:"非洲", country:"肯尼亚", regulator:"商业注册处（BRS）", title:"大规模注销公告：1,851家公司拟被除名（11月13日）", summary:"BRS依据Companies Act第894条（停止运营）和第897条（公司申请）公告注销1,851家公司。利益相关方须在2027年2月中旬前提出异议。反映肯尼亚持续清理僵尸公司的监管力度。", category:"注销", status:"已生效", published:"2026-11-13", effective:"2026-11-13", source:"肯尼亚BRS/Kenya Gazette", url:"https://brs.go.ke" }
+,{ region:"非洲", country:"肯尼亚", regulator:"资本市场管理局（CMA）", title:"ESG强制报告制度（2027年1月起）", summary:"自2027年1月1日起，上市公司、银行、保险公司、养老基金、SACCO及大型国企须按IFRS S1和S2标准披露可持续性和气候相关风险信息。CMA同步批准公众公司ESG准则草案。", category:"ESG/可持续", status:"已发布待实施", published:"2026-11", effective:"2027-01-01", source:"肯尼亚CMA", url:"https://www.cma.go.ke" }
+,{ region:"非洲", country:"尼日利亚", regulator:"中央银行（CBN）", title:"BOFIA修正案：非银行金融机构可被指定为系统重要性机构", summary:"正在推进的BOFIA 2020修正案将允许CBN将非银行金融机构（含金融科技企业）指定为系统重要性机构（SII），适用更严格的治理、网络安全和运营韧性标准。", category:"监管架构", status:"立法/审议中", published:"2026-11", effective:"—", source:"CBN", url:"https://www.cbn.gov.ng" }
+,{ region:"东南亚", country:"越南", regulator:"政府", title:"《越南公司治理准则2026》（VNCG Code 2026）发布", summary:"采用G20/OECD标准的\"遵守或解释\"机制，要求上市公司公开说明偏离治理原则的原因；强制披露最终受益人（UBO）；董事会须管理ESG、气候变化和网络安全风险；建议设立审计/ESG专门委员会。", category:"董事会治理", status:"已生效", published:"2026", effective:"2026", source:"越南政府", url:"https://chinhphu.vn" }
+,{ region:"东南亚", country:"印度尼西亚", regulator:"国企部", title:"GR 38/2026：国企治理集中化（BPI Danantara持股99%）", summary:"国有企业治理结构重大调整：BPI Danantara持有国企99%B系列股份，国家保留1%A系列Dwiwarna股（公共利益否决权）。集中化管理旨在提升运营效率和止损能力。", category:"公司法修订", status:"已生效", published:"2026", effective:"2026", source:"印尼国企部", url:"https://www.kemenkumham.go.id" }
+,{ region:"中东", country:"沙特阿拉伯", regulator:"资本市场管理局（CMA）", title:"CMA提议强化股东权利（10月咨询）", summary:"提议：持股5%以上股东可要求召开现场股东大会；累计亏损达50%以上的公司须实施更严格披露要求和复苏计划。进一步完善上市公司治理框架。", category:"董事会治理", status:"草案征求意见", published:"2026-10", effective:"—", source:"沙特CMA", url:"https://www.cma.org.sa" }
+,{ region:"中国", country:"中国香港", regulator:"政府/证监会", title:"无纸化证券市场规则正式生效（11月16日）", summary:"《证券及期货（无纸证券市场）规则》2026年11月16日生效，取消纸质股票，强制电子化持有和转让。公司须更新章程以适应无纸化证券交易和电子通讯。", category:"公司法修订", status:"已生效", published:"2026-11-16", effective:"2026-11-16", source:"香港公司注册处", url:"https://www.cr.gov.hk" }
+,{ region:"离岸金融中心", country:"开曼群岛/BVI/百慕大", regulator:"CIMA/BVI FSC/BMA", title:"离岸三大中心经济实质与受益所有权执法全面收紧", summary:"2026年离岸金融中心从原则指导转向强制合规：BVI引入合法利益（Legitimate Interest）访问机制提升UBO透明度；各辖区持续执行经济实质法案；CIMA专题审查发现董事会监督不足为主要风险；开曼推出数字资产/代币化基金专门监管框架。", category:"受益所有权", status:"已生效", published:"2026", effective:"2026", source:"CIMA/BVI FSC/BMA", url:"https://www.cimaKY.com" }
 ];
 const REGION_COLORS = {"非洲":"var(--africa)","东南亚":"var(--sea)","拉美":"var(--latam)","中东南亚":"var(--mesa)","中国":"var(--china)","离岸金融中心":"var(--offshore)","俄罗斯":"var(--russia)"};
 const STATUS_CLASS = {"已生效":"st-active","已发布待实施":"st-soon","草案征求意见":"st-draft","立法/审议中":"st-legis"};
